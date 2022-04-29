@@ -105,7 +105,6 @@ trainval_test_data = TrainValData(time_series_list=stock_data_list,
                              )
 
 model_att_name = './models_weights/' + str(yield_duration) + 'day/model_weights_att_' + str(date_begin) +'_' + str(train_length) + ablation
-model_lstm_name = './models_weights/' + str(yield_duration) + 'day/model_weights_lstm_' + str(date_begin) + '_' + str(train_length)
 model_gru_name = './models_weights/' + str(yield_duration) + 'day/model_weights_gru_' + str(date_begin) +'_' + str(train_length)
 
 train, val, dates_info = train_val_data.get(date_begin, order="by_date")
